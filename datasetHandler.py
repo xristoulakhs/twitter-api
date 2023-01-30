@@ -7,11 +7,11 @@ import igraph
 import matplotlib as plt
 
 #enviroment variables for authentication
-os.environ['BEARER'] = 'AAAAAAAAAAAAAAAAAAAAAMWXjgEAAAAAL7iVTqpK9cGfEzi1BPBdWCw0ui4%3DNhqGho6qEnrPi1XytDmkTc580PH3rUtQXw4ah3CdwoqoBNJtES'
-os.environ['APIKEY'] = 'wEI3ZtQBfg3GKMeSQcEBfrMQb'
-os.environ['APISECRET'] = 'ysmFgZHOJt3Sp4VBABfPIjuf3xKAb7KHMY0SmxKopLMS6iDkHO'
-os.environ['ACCTOKEN'] = '1594357091422044161-B3hDEhItin4oY9tbb4D2iBl1PE8Sgi'
-os.environ['ACCSECRET'] = 'bQwQlCkRlRzaAXdp9OPrSFwTDiw4QH2ZkcWbicbXRTlKs'
+os.environ['BEARER'] = 'bearer'
+os.environ['APIKEY'] = 'api key'
+os.environ['APISECRET'] = 'api secret'
+os.environ['ACCTOKEN'] = 'access token'
+os.environ['ACCSECRET'] = 'access secret'
 
 api = None
 
@@ -167,7 +167,8 @@ def main():
     authentication()
     #to make sure authentication will happen first, we wait for three seconds
     time.sleep(3.0)
-    #initData("#FifaWorldCup","2022--12--18",500)
+    
+    initData("#FifaWorldCup","2022--12--18",500)
 
     createEdges()
 
